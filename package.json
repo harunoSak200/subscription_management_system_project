@@ -1,0 +1,30 @@
+{
+  "name": "subdub",
+  "version": "1.0.0",
+  "description": "This is the subscription management system that controls all the workflows that takes place step by step behind every subscription based platoform like the netflix , amazon prime",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harunoSak200/subscription_management_system_project.git"
+  },
+  "author": "Aditya kshatriya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harunoSak200/subscription_management_system_project/issues"
+  },
+  "homepage": "https://github.com/harunoSak200/subscription_management_system_project#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongodb": "^6.16.0",
+    "mongoose": "^8.15.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.27.0"
+  }
+}
