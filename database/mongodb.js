@@ -1,20 +1,21 @@
-import {mongoose} from 'mongoose' ;
-import { PORT ,  DB_URI , NODE_ENV} from '../config/env';  
+// database/mongodb.js
+const mongoose = require('mongoose');
+const { DB_URI, NODE_ENV } = require('../config/env');
 
-if(!DB_URI){
-    throw new Error('Please define the MONGODB_URI environment variable inside .env.<developement/production>.local') ; 
+if (!DB_URI) {
+  throw new Error(
+    'Please define the MONGODB_URI environment variable inside .env.<development/production>.local'
+  );
 }
 
-// connection : 
-const connectToDatabase = async()=>{
-    try{
-        await mongoose.connect(DB_URI) ; 
-        console.log(`connected to database in ${NODE_ENV}`)
-    }
-    catch(e){
-        console.error('error connection to database' , e)
-        process.exit(1) ;
-    }
-}
+const connectToDatabase = async () => {
+  try {
+    await mongoose.connect(DB_URI);
+    console.log(`Connected to database in ${NODE_ENV}`);
+  } catch (e) {
+    console.error('Error connecting to database', e);
+    process.exit(1);
+  }
+};
 
-export default connectToDatabase ; 
+module.exports = connectToDatabase;

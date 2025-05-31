@@ -1,4 +1,4 @@
-import {Router} from 'express'
+const Router = require('express') ; 
 const subscriptionRouter = Router() ; 
 
 subscriptionRouter.get('/' , (req , res)=>{
@@ -45,4 +45,4 @@ subscriptionRouter.get('/upcoming-renewals' , (req , res)=>{
     })
 })
 
-export default subscriptionRouter
+module.exports = subscriptionRouter

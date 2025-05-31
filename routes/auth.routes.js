@@ -1,4 +1,4 @@
-import {Router} from 'express' 
+const Router = require('express') ; 
 const authRouter = Router() ; 
 
 
@@ -19,4 +19,4 @@ authRouter.post('/sign-out' , (req , res)=>{
     })
 }) ; 
 
-export default authRouter ; 
+module.exports = authRouter ; 

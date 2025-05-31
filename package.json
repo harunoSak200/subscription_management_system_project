@@ -2,7 +2,6 @@
   "name": "subdub",
   "version": "1.0.0",
   "description": "This is the subscription management system that controls all the workflows that takes place step by step behind every subscription based platoform like the netflix , amazon prime",
-  "type": "module",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -19,6 +18,7 @@
   },
   "homepage": "https://github.com/harunoSak200/subscription_management_system_project#readme",
   "dependencies": {
+    "cookie-parser": "^1.4.7",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "mongodb": "^6.16.0",

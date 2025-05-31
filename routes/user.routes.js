@@ -1,4 +1,5 @@
-import {Router} from 'express'
+const Router = require('express') ; 
+
 const userRouter = Router() ; 
 
 userRouter.get('/' , (req , res)=>{
@@ -27,4 +28,4 @@ userRouter.delete('/:id' , (req , res)=>{
     })
 })
 
-export default userRouter ;
+module.exports = userRouter ;
